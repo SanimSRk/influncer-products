@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+/*header areya styel*/
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.contener {
+  width: 85%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.nav_list_areya ul {
+  display: flex;
+  align-items: center;
+}
+.nav_list_areya ul li {
+  margin-right: 2rem;
+}
+
+.nav_titel {
+  color: #3a3a3a;
+  font-size: 1.4rem;
+}
+.nav_titel_color {
+  color: #f96199;
+}
+.fa-cart-shopping {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+/*camera section styel*/
+
+.camera_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.camera_text_section {
+  width: 50%;
+  padding: 0 1rem;
+}
+.camera_titel {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+.camera_img_areya {
+  background-image: url(image/Circle\ design.svg);
+  background-position: 100%;
+  background-size: cover;
+}
+.camera_img_areya img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.btn {
+  border-radius: 41px;
+  background: #e02c6d;
+  padding: 10px 24px;
+  color: white;
+  border: none;
+  margin-top: 2rem;
+}
+/* sponser areya styel */
+
+.sponser_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddd;
+  padding: 1rem;
+  margin: 4.2rem 0;
+}
+
+/*mediya screen styel*/
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  .icon {
+    display: none;
+  }
+  .nav_list_areya ul {
+    margin-top: 1rem;
+  }
+  .nav_list_areya ul li {
+    margin-right: 0.8rem;
+  }
+  .camera_section {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .camera_text_section {
+    margin-top: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  .camera_titel {
+    font-size: 1.6rem;
+  }
+  .sponser_section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: none;
+    gap: 1rem;
+
+    text-align: center;
+  }
+  .sponser_section img {
+    width: 100%;
+  }
+}
+/* medim size secreen styel*/
+@media screen and (min-width: 577px) and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+  }
+  .icon {
+    display: none;
+  }
+  .nav_list_areya ul {
+    margin-top: 1rem;
+  }
+  .nav_list_areya ul li {
+    margin-right: 0.8rem;
+  }
+  .camera_section {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .camera_text_section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .camera_titel {
+    font-size: 1.6rem;
+  }
+  .sponser_section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: none;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+  .sponser_section img {
+    width: 100%;
+  }
+}
