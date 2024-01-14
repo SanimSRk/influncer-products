@@ -87,6 +87,36 @@ nav {
   margin: 4.2rem 0;
 }
 
+/*shopning areya styel */
+
+.product_img_section_areya {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.product_img {
+  padding: 1rem;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.all_img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.product_reting {
+  display: flex;
+}
+.product_header_titel {
+  text-align: center;
+}
+.product_titel {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
 /*mediya screen styel*/
 
 @media screen and (max-width: 576px) {
@@ -127,6 +157,13 @@ nav {
   .sponser_section img {
     width: 100%;
   }
+
+  .product_img_section_areya {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
 }
 /* medim size secreen styel*/
 @media screen and (min-width: 577px) and (max-width: 960px) {
@@ -140,7 +177,7 @@ nav {
     margin-top: 1rem;
   }
   .nav_list_areya ul li {
-    margin-right: 0.8rem;
+    margin-right: 2rem;
   }
   .camera_section {
     flex-direction: column-reverse;
@@ -166,5 +203,11 @@ nav {
   }
   .sponser_section img {
     width: 100%;
+  }
+  .product_img_section_areya {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
